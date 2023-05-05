@@ -1,0 +1,15 @@
+@import "../../../common/global.scss";
+
+.offcanvas-types {
+  @include flexCenter();
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  height: auto !important;
+  padding: 20px;
+
+  .checked {
+    background-color: black !important;
+    color: white !important;
+  }
+}

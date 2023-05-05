@@ -1,0 +1,14 @@
+@import "../../common/global.scss";
+
+.footer-container {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  color: gray;
+  transition: $transitionTime;
+  z-index: 5000;
+
+  &:hover {
+    color: black;
+  }
+}

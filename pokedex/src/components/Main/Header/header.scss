@@ -1,0 +1,30 @@
+@import "../../../common/global.scss";
+
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 10vh;
+  margin-bottom: 20px;
+  max-width: 100vw;
+  @include flexCenter();
+  gap: 15px;
+  padding: $paddingSide;
+  background-color: lightblue;
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .showTypes {
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 10px;
+    transition: $transitionTime;
+    background-color: white;
+
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+}

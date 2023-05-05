@@ -1,0 +1,20 @@
+$main-color: white;
+$main-darkColor: dark;
+$paddingSide: 0px 10px;
+$transitionTime: 0.5s;
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCenterAndBetween {
+  @include flexCenter();
+  justify-content: space-between;
+}
+
+@mixin flexCenterAndAround {
+  @include flexCenter();
+  justify-content: space-around;
+}

@@ -1,0 +1,30 @@
+@import "../../../common/global.scss";
+
+.list-container {
+  @include flexCenter();
+  height: 85%;
+  max-width: 100vw;
+
+  .pokemons-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .list-container {
+    .pokemons-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .list-container {
+    .pokemons-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
