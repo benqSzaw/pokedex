@@ -70,7 +70,7 @@ const Stats = ({ id }: { id: number }) => {
 
     if (!pokemon) return <>loading</>;
     return (
-        <div className='background' style={{ background: backgroundColor }} onClick={getHome}>
+        <div className='background' style={{ background: backgroundColor }}>
             <div className="main-container">
 
                 <div className="buttons">
