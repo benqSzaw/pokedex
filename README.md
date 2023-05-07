@@ -1,7 +1,7 @@
 
 # Pokedex
 
-Simple Pokemon encyclopedia. Created with React.js, TypeScript and SASS
+Simple Pokemon encyclopedia. Created with React.js, Redux, TypeScript, SASS and Bootstrap
 
 
 ## Installation
