@@ -1,6 +1,6 @@
 import pokedex from "./data/pokedex.json";
 
-export const githubLink = "https://github.com/benqSzaw/Portfolio";
+export const githubLink = "https://github.com/benqSzaw/pokedex";
 
 export const getIcon = (id: number) => {
   return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
