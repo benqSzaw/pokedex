@@ -7,6 +7,7 @@ import TypeDiv from "../TypeDiv";
 import { useNavigate } from 'react-router-dom';
 import { resetType, setSearchInput } from "../../common/redux/appSlice";
 import { useAppDispatch } from "../../common/redux/hooks";
+import { Spinner } from "react-bootstrap";
 
 const Stats = ({ id }: { id: number }) => {
     const navigate = useNavigate();
@@ -73,7 +74,7 @@ const Stats = ({ id }: { id: number }) => {
         navigate("/")
     }
 
-    if (!pokemon) return <>loading</>;
+    if (!pokemon) return <div className="loading"> <Spinner animation="border" /> </div>;
     return (
         <div className='background' style={{ background: backgroundColor }}>
             <div className="main-container">

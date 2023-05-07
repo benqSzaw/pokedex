@@ -1,5 +1,9 @@
 @import "../../common/global.scss";
 
+.loading {
+  @include flexCenter();
+  height: 100vh;
+}
 .background {
   @include flexCenter();
   height: 100vh;
