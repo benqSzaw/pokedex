@@ -5,9 +5,12 @@ import { PokemonApiType, getIcon, getName } from "../../common/Constants"
 import TypeColor from "../../common/TypesColor";
 import TypeDiv from "../TypeDiv";
 import { useNavigate } from 'react-router-dom';
+import { resetType, setSearchInput } from "../../common/redux/appSlice";
+import { useAppDispatch } from "../../common/redux/hooks";
 
 const Stats = ({ id }: { id: number }) => {
     const navigate = useNavigate();
+    const dispatch = useAppDispatch();
     const [pokemon, setPokemon] = useState<PokemonApiType>();
     const [backgroundColor, setBackgroundColor] = useState<string>();
     const beforeId = id == 1 ? 809 : id - 1;
@@ -65,6 +68,8 @@ const Stats = ({ id }: { id: number }) => {
     }
 
     const getHome = () => {
+        dispatch(resetType())
+        dispatch(setSearchInput(""))
         navigate("/")
     }
 
