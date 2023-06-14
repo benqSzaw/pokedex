@@ -5,7 +5,7 @@ import { githubLink } from "../../common/Constants"
 const Footer = () => {
     return (
         <a href={githubLink} target="_blank" className="footer-container">
-            <AiFillGithub size={30} />
+            <AiFillGithub size={40} />
         </a>
     )
 }
